@@ -1,10 +1,10 @@
 ## Ringkasan
 
-* **Tautan folder Google Drive: https://drive.google.com/drive/folders/1rNsSajciyGwXDsJ48--4FoHYs-t4PoZV
-* **Jumlah citra:** 304 (75 citra asli, 229 citra internet)
-* **Foto sendiri per anggota:** Alvio 15, Jonathan 15, Tiurma 15, Astria 15, Josh 16
-* **Sumber data tambahan dan lisensinya:** Kaggle
-* **Jumlah baris anotasi:** 229
+Tautan folder Google Drive: https://drive.google.com/drive/folders/1rNsSajciyGwXDsJ48--4FoHYs-t4PoZV
+Jumlah citra: 304 (75 citra asli, 229 citra internet)
+Foto sendiri per anggota: Alvio 15, Jonathan 15, Tiurma 15, Astria 15, Josh 16
+Sumber data tambahan dan lisensinya: Kaggle
+Jumlah baris anotasi: 229
 
 ## Cara Pengambilan Foto
 
