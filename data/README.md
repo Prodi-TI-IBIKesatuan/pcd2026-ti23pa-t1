@@ -1,6 +1,6 @@
 ## Ringkasan
 
-* **Tautan folder Google Drive (akses terbatas):** [https://drive.google.com/drive/folders/1UrGjLPMuYD6hdA_Y2SSPOVw5D800sLV4](https://drive.google.com/drive/folders/1UrGjLPMuYD6hdA_Y2SSPOVw5D800sLV4)
+* **Tautan folder Google Drive: https://drive.google.com/drive/folders/1rNsSajciyGwXDsJ48--4FoHYs-t4PoZV
 * **Jumlah citra:** 304 (75 citra asli, 229 citra internet)
 * **Foto sendiri per anggota:** Alvio 15, Jonathan 15, Tiurma 15, Astria 15, Josh 16
 * **Sumber data tambahan dan lisensinya:** Kaggle
