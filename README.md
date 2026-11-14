@@ -10,30 +10,30 @@ Menemukan letak pelat nomor pada foto kendaraan di lingkungan nyata, lalu membac
 
 ## Notebook
 
-| Notebook | Tahap | Isi | Buka |
-| --- | --- | --- | --- |
-| `01_dataset_preprocessing.ipynb` | 1 | Statistik dataset, cek anotasi, preprocessing, gambar sebelum–sesudah | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/01_dataset_preprocessing.ipynb) |
-| `02_metode_klasik.ipynb` | 2 | 3 metode klasik dan metriknya | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/02_metode_klasik.ipynb) |
-| `03_metode_modern.ipynb` | 2 | Inferensi model pralatih dan metriknya | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/03_metode_modern.ipynb) |
-| `04_evaluasi.ipynb` | 2 | Tabel perbandingan, uji ablasi, kasus gagal | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/04_evaluasi.ipynb) |
+| Notebook                         | Tahap | Isi                                                                   | Buka                                                                                                                                                                                                             |
+| -------------------------------- | ----- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `01_dataset_preprocessing.ipynb` | 1     | Statistik dataset, cek anotasi, preprocessing, gambar sebelum–sesudah | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/01_dataset_preprocessing.ipynb) |
+| `02_metode_klasik.ipynb`         | 2     | 3 metode klasik dan metriknya                                         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/02_metode_klasik.ipynb)         |
+| `03_metode_modern.ipynb`         | 2     | Inferensi model pralatih dan metriknya                                | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/03_metode_modern.ipynb)         |
+| `04_evaluasi.ipynb`              | 2     | Tabel perbandingan, uji ablasi, kasus gagal                           | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/04_evaluasi.ipynb)              |
 
 ## Dataset (Tahap 1)
 
-- Jumlah citra: [isi, minimal 250]
-- Foto sendiri: [isi, minimal 75, 15 per anggota]
-- Sumber data tambahan dan lisensinya: [isi, atau tulis "tidak ada"]
-- Langkah preprocessing: [isi, ringkas dan berurutan]
+- Jumlah citra: 401
+- Foto sendiri: Jonathan: 50 + 19, Joshua: 172 + 16, Alvio: 15, Tiurma: 15, Astria: 14
+- Sumber data tambahan dan lisensinya: Indonesian License Plate Detection Dataset (Zenodo, DOI: 10.5281/zenodo.15605718) — Lisensi Creative Commons Attribution 4.0 International (CC BY 4.0)
+- Langkah preprocessing: 1) Penyesuaian ukuran citra (resize proporsional, sisi terpanjang maks. 1024 px), 2) Konversi ke skala abu-abu (grayscale), 3) Reduksi derau menggunakan Gaussian Filtering / Bilateral Filter, 4) Peningkatan kontras lokal adaptif menggunakan CLAHE (Contrast Limited Adaptive Histogram Equalization).
 
 Rincian dataset, format anotasi, dan tautan Drive: [data/README.md](data/README.md). Contoh sebelum–sesudah ada di [outputs/figures/](outputs/figures/).
 
 ## Hasil (Tahap 2)
 
-| Metode | Jenis | IoU | CER |
-| --- | --- | --- | --- |
+| Metode                      | Jenis  | IoU   | CER   |
+| --------------------------- | ------ | ----- | ----- |
 | [isi: nama metode klasik 1] | klasik | [isi] | [isi] |
 | [isi: nama metode klasik 2] | klasik | [isi] | [isi] |
 | [isi: nama metode klasik 3] | klasik | [isi] | [isi] |
-| [isi: nama model] | modern | [isi] | [isi] |
+| [isi: nama model]           | modern | [isi] | [isi] |
 
 - **Uji ablasi:** [isi: parameter atau langkah yang diubah, dan pengaruhnya pada metrik]
 - **Kasus gagal:** [isi: minimal 3 contoh dan penyebabnya, gambar di outputs/figures/]
@@ -49,6 +49,6 @@ Unggah foto kendaraan, tampilkan kotak pelat dan teks yang terbaca. Kode aplikas
 
 Tuliskan setiap kode, model, dataset, atau bantuan AI yang dipakai beserta sumbernya. Pemakaian tanpa sumber dihitung plagiarisme.
 
-| Yang dipakai | Sumber | Dipakai untuk |
-| --- | --- | --- |
-| [isi] | [isi] | [isi] |
+| Yang dipakai                                                       | Sumber                                                                           | Dipakai untuk                                       |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------- | --------------------------------------------------- |
+| Indonesian License Plate Detection Dataset (Oondwidjaja, N., 2025) | [Zenodo (DOI: 10.5281/zenodo.15605718)](https://doi.org/10.5281/zenodo.15605718) | Data tambahan citra pelat nomor (Lisensi CC BY 4.0) |

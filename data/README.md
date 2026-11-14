@@ -4,12 +4,12 @@ Dataset lengkap **tidak** disimpan di repo ini. Repo hanya berisi `sample/` (≤
 
 ## Ringkasan
 
-- Tautan folder Google Drive (akses terbatas): [isi: https://drive.google.com/drive/folders/...]
-- Jumlah citra: [isi]
-- Foto sendiri per anggota: [isi: mis. andi 20, budi 15, ...]
-- Sumber data tambahan dan lisensinya: [isi, atau "tidak ada"]
+- Tautan folder Google Drive (akses terbatas): https://drive.google.com/drive/folders/1UrGjLPMuYD6hdA_Y2SSPOVw5D800sLV4?usp=sharing
+- Jumlah citra: 401
+- Foto sendiri per anggota: Alvio: 15, Jonathan: 19, Astria: 14, Tiurma: 15, Joshua: 16
+- Sumber data tambahan dan lisensinya: Indonesian License Plate Detection Dataset (Zenodo, DOI: 10.5281/zenodo.15605718) — Lisensi Creative Commons Attribution 4.0 International (CC BY 4.0)
 - Jumlah baris anotasi: [isi]
-- Cara pengambilan foto (perangkat, waktu, lokasi umum): [isi]
+- Cara pengambilan foto (perangkat, waktu, lokasi umum): Smartphone, Siang - Sore - Malam, Parkiran
 
 ## Anotasi
 
