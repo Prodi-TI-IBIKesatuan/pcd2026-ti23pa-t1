@@ -10,30 +10,34 @@ Menemukan letak pelat nomor pada foto kendaraan di lingkungan nyata, lalu membac
 
 ## Notebook
 
-| Notebook | Tahap | Isi | Buka |
-| --- | --- | --- | --- |
-| `01_dataset_preprocessing.ipynb` | 1 | Statistik dataset, cek anotasi, preprocessing, gambar sebelum–sesudah | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/01_dataset_preprocessing.ipynb) |
-| `02_metode_klasik.ipynb` | 2 | 3 metode klasik dan metriknya | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/02_metode_klasik.ipynb) |
-| `03_metode_modern.ipynb` | 2 | Inferensi model pralatih dan metriknya | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/03_metode_modern.ipynb) |
-| `04_evaluasi.ipynb` | 2 | Tabel perbandingan, uji ablasi, kasus gagal | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/04_evaluasi.ipynb) |
+| Notebook                         | Tahap | Isi                                                                   | Buka                                                                                                                                                                                                             |
+| -------------------------------- | ----- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `01_dataset_preprocessing.ipynb` | 1     | Statistik dataset, cek anotasi, preprocessing, gambar sebelum–sesudah | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/01_dataset_preprocessing.ipynb) |
+| `02_metode_klasik.ipynb`         | 2     | 3 metode klasik dan metriknya                                         | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/02_metode_klasik.ipynb)         |
+| `03_metode_modern.ipynb`         | 2     | Inferensi model pralatih dan metriknya                                | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/03_metode_modern.ipynb)         |
+| `04_evaluasi.ipynb`              | 2     | Tabel perbandingan, uji ablasi, kasus gagal                           | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Prodi-TI-IBIKesatuan/pcd2026-ti23pa-t1/blob/main/notebooks/04_evaluasi.ipynb)              |
 
 ## Dataset (Tahap 1)
 
-- Jumlah citra: [isi, minimal 250]
-- Foto sendiri: [isi, minimal 75, 15 per anggota]
-- Sumber data tambahan dan lisensinya: [isi, atau tulis "tidak ada"]
-- Langkah preprocessing: [isi, ringkas dan berurutan]
+- Jumlah citra: 304 (75 citra asli, 229 citra internet)
+- Foto sendiri: Alvio 15, Jonathan 15, Tiurma 15, Astria 15, Josh 16
+- Sumber data tambahan dan lisensinya: Kaggle & Zenodo (Creative Commons Attribution 4.0 International / CC BY 4.0 — Copyright: "Original dataset by Roboflow user 'anpr'. Curated and republished for citation purposes.")
+- Langkah preprocessing: Resize Gambar (Maks 1024px): Mengubah ukuran gambar dengan batas maksimal 1024 piksel untuk menyelaraskan dimensi citra dan mempercepat proses komputasi.
+  Konversi ke Grayscale: Mengubah citra berwarna (BGR) menjadi skala abu-abu guna mengurangi kompleksitas saluran warna.
+  Peningkatan Kontras (CLAHE): Menggunakan Contrast Limited Adaptive Histogram Equalization (dengan parameter clipLimit=5.0 dan tileGridSize=(9, 9)) untuk memperjelas batas karakter pelat di bawah kondisi pencahayaan yang tidak rata.
+  Reduksi Noise (Gaussian Blur): Menerapkan filter Gaussian blur dengan kernel 5x5 untuk menyaring gangguan (noise) halus pada gambar.
+  Deteksi Tepi (Canny): Mengaplikasikan algoritma Canny (threshold 50 dan 150) untuk mendeteksi serta mengisolasi tepi karakter pelat nomor kendaraan.
 
 Rincian dataset, format anotasi, dan tautan Drive: [data/README.md](data/README.md). Contoh sebelum–sesudah ada di [outputs/figures/](outputs/figures/).
 
 ## Hasil (Tahap 2)
 
-| Metode | Jenis | IoU | CER |
-| --- | --- | --- | --- |
+| Metode                      | Jenis  | IoU   | CER   |
+| --------------------------- | ------ | ----- | ----- |
 | [isi: nama metode klasik 1] | klasik | [isi] | [isi] |
 | [isi: nama metode klasik 2] | klasik | [isi] | [isi] |
 | [isi: nama metode klasik 3] | klasik | [isi] | [isi] |
-| [isi: nama model] | modern | [isi] | [isi] |
+| [isi: nama model]           | modern | [isi] | [isi] |
 
 - **Uji ablasi:** [isi: parameter atau langkah yang diubah, dan pengaruhnya pada metrik]
 - **Kasus gagal:** [isi: minimal 3 contoh dan penyebabnya, gambar di outputs/figures/]
@@ -50,5 +54,5 @@ Unggah foto kendaraan, tampilkan kotak pelat dan teks yang terbaca. Kode aplikas
 Tuliskan setiap kode, model, dataset, atau bantuan AI yang dipakai beserta sumbernya. Pemakaian tanpa sumber dihitung plagiarisme.
 
 | Yang dipakai | Sumber | Dipakai untuk |
-| --- | --- | --- |
-| [isi] | [isi] | [isi] |
+| ------------ | ------ | ------------- |
+| [isi]        | [isi]  | [isi]         |
