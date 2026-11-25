@@ -6,13 +6,14 @@ Jumlah citra: 304 (75 citra asli, 229 citra internet)
 
 Foto sendiri per anggota: Alvio 15, Jonathan 15, Tiurma 15, Astria 15, Josh 16
 
-Sumber data tambahan dan lisensinya: Kaggle
+Sumber data tambahan dan lisensinya: Kaggle & Zenodo (Creative Commons Attribution 4.0 International / CC BY 4.0 — Copyright: "Original dataset by Roboflow user 'anpr'. Curated and republished for citation purposes.")
 
 Jumlah baris anotasi: 229
 
 ## Cara Pengambilan Foto
 
 **Alvio:**
+
 1. FM1 - Foto di kampus, 2 november, 11.30
 2. FM2 - Foto di kampus, 2 november, 11.32
 3. FM3 - Foto di kampus, 2 november, 11.34
@@ -30,6 +31,7 @@ Jumlah baris anotasi: 229
 15. FM15 - Foto di kampus, 2 november, 11.55
 
 **Josh:**
+
 1. FM1 - Foto di kampus, 6 november, 20.27
 2. FM2 - Foto di kampus, 6 november, 20.27
 3. FM3 - Foto di kampus, 6 november, 20.27
@@ -46,6 +48,7 @@ Jumlah baris anotasi: 229
 14. FM14 - Foto di parkiran, 6 november, 21.35
 
 **Tiurma:**
+
 1. FM1 - Foto di kampus, 2 november, 08.15
 2. FM2 - Foto di parkiran, 2 november, 08.40
 3. FM3 - Foto di jalan, 2 november, 09.05
@@ -63,6 +66,7 @@ Jumlah baris anotasi: 229
 15. FM15 - Foto di halte, 2 november, 16.50
 
 **Astria:**
+
 1. FM1 - Foto di kampus, 2 november, 07.45
 2. FM2 - Foto di parkiran, 2 november, 10.15
 3. FM3 - Foto di jalan, 2 november, 13.30
@@ -80,6 +84,7 @@ Jumlah baris anotasi: 229
 15. FM15 - Foto di sekolah, 6 november, 13.45
 
 **Jonathan:**
+
 1. FM1 - Foto di kampus, 2 november, 09.10
 2. FM2 - Foto di parkiran, 2 november, 11.55
 3. FM3 - Foto di jalan, 2 november, 14.40
